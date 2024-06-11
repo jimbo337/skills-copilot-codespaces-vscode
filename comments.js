@@ -1,4 +1,4 @@
-// Create Web Server
+// Create web server
 // Create a web server that listens on port 3000 and serves the comments.html file
 // Create a route that serves the comments.json file when the URL path is /api/comments
 // Use the fs module to read the comments.json file and send the contents back to the client
