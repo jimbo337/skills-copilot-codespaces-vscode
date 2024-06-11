@@ -1,8 +1,21 @@
 // Create Web Server
-// npm install express --save
-// npm install body-parser --save
-// npm install mysql --save
-// npm install express-session --save
-// npm install express-mysql-session --save
-// npm install multer --save
-// npm install ejs
+// Run the server
+// Test the server
+
+const express = require('express');
+
+const app = express();
+
+// app.use(express.static('./public'));
+
+app.get('/', (req, res) => {
+    res.send('Hello World');
+});
+
+app.get('/api/comments', (req, res) => {
+    res.send('Comments');
+});
+
+app.listen(3000, () => {
+    console.log('Server is running');
+});
